@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    font-family: 'Comfortaa', cursive;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background: #060c21;
+    -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+    border-radius: 2px;
+}
+
+.box:before,
+.box:after {
+    background: linear-gradient(220deg, #f22ee8, #060c21, #2ee5f2)
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #2ee5f2 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #2ee5f2 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}   
+
+.myButton2 {
+	box-shadow: 0px 10px 14px -7px #ce22c5;
+	background:linear-gradient(to bottom, #f22ee8 5%, #f84bef 100%);
+	background-color:#790873;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #500b4c;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #f22ee8 5%, #af12a7 100%);
+	background-color:#790873;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}   
+
+h1 {
+    cursor: default;
+}
+
+p {
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+i {
+    color: red;
+}
